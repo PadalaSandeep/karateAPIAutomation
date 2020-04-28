@@ -1,0 +1,15 @@
+{
+    "data": {
+        "id": 3,
+        "email": "#present",
+        "first_name": "#present",
+        "last_name": "#present",
+        "avatar": "#present",
+        "addr": "#notpresent"
+    },
+    "ad": {
+        "company": "#present",
+        "url": "#present",
+        "text": "#present"
+    }
+}
