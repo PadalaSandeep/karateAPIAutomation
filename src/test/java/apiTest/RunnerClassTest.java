@@ -11,14 +11,14 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import com.intuit.karate.KarateOptions;
 import com.intuit.karate.Results;
 import com.intuit.karate.Runner;
 
 import net.masterthought.cucumber.Configuration;
 import net.masterthought.cucumber.ReportBuilder;
-@KarateOptions(tags = {"~@ignore"})
-public class RunnerClass {
+
+
+public class RunnerClassTest {
 	
 	@BeforeClass
 	public static void BeforeClass() {
@@ -39,7 +39,7 @@ public class RunnerClass {
 		Collection<File> jsonFiles = FileUtils.listFiles(new File(karateOutputPath), new String[] { "json" }, true);
 		List<String> jsonPaths = new ArrayList<String>(jsonFiles.size());
 		jsonFiles.forEach(file -> jsonPaths.add(file.getAbsolutePath()));
-		Configuration config = new Configuration(new File("target"), "aPITests");
+		Configuration config = new Configuration(new File("target"), "apiTest");
 		ReportBuilder reportBuilder = new ReportBuilder(jsonPaths, config);
 		reportBuilder.generateReports();
 	}
