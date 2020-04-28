@@ -1,8 +1,8 @@
 Feature: Get Customer Account Details
 
 Background: 
-		* def expectedOutput1 = read('../dataResources/SingleUserResult.json')
-		* def expectedFormat = read('../dataResources/format.json')
+		* def expectedOutput1 = read('../dataResources/responseFiles/SingleUserResult.json')
+		* def expectedFormat = read('../dataResources/requestFiles/format.json')
 		* def featureVar = read('Tutotrial.feature')
 		* def result = call featureVar
 

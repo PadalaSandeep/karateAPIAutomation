@@ -1,7 +1,7 @@
 Feature: Get Customer Account Details
 
 Background: 
-		* def expectedOutput1 = read('../dataResources/SingleUserResult.json')
+		* def expectedOutput1 = read('../dataResources/responseFiles/SingleUserResult.json')
 
 
 Scenario: user 2 details
