@@ -1,7 +1,7 @@
 Feature: Get Customer Account Details
 
 Scenario: user 5 details
-		* def expectedFormat = read('../dataResources/requestFiles/format.json')
+		* def expectedFormat = read('../requestFiles/format.json')
 		* def waitUntil = 
 		"""
 		function(x) {
