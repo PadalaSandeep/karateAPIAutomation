@@ -19,7 +19,7 @@ Scenario: user 3 details
 		And print 'First name : ',result.response.data.first_name
 		And match response == expectedFormat
 
-
+@golden
 Scenario: user 4 details
 		* def data = { name: 'Jagruti', job: 'Consultant' }
 		
