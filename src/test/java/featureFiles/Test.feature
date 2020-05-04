@@ -1,5 +1,6 @@
 Feature: Get Customer Account Details
 
+@smoke
 Scenario: user 5 details
 		* def expectedFormat = read('../requestFiles/format.json')
 		* def waitUntil = 

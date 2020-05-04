@@ -6,7 +6,7 @@ Background:
 		* def featureVar = read('Tutotrial.feature')
 		* def result = call featureVar
 
-
+@smoke @golden
 Scenario: user 3 details
 		
 		Given url 'https://reqres.in/api/users/3'
