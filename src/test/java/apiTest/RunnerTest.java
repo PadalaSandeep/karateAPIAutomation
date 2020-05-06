@@ -25,10 +25,10 @@ public class RunnerTest {
 
     @Test
     public void testParallel() {
+    	//without hooks
     	//Results results = Runner.parallel(getClass(), 2);
-    	Results results = Runner.path("classpath:featureFiles")
-                .hook(new MandatoryTagHook())
-                .parallel(1);
+    	//with hooks
+    	Results results = Runner.path("classpath:featureFiles").hook(new MandatoryTagHook()).parallel(2);
         generateReport(results.getReportDir());
         assertTrue(results.getErrorMessages(), results.getFailCount() == 0);
     }

@@ -3,7 +3,7 @@ Feature: Get Customer Account Details
 Background: 
 		* def expectedOutput1 = read('../responseFiles/SingleUserResult.json')
 
-@golden
+
 Scenario: user 2 details
 		
 		Given url 'https://reqres.in/api/users/2'
